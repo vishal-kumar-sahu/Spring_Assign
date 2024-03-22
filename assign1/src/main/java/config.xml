@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="map1" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="Vishal" value="20000"/>
+                <entry key="Ritik" value="10050"/>
+                <entry key="Anmol" value="20000"/>
+                <entry key="Kamal" value="20600"/>
+            </map>
+        </constructor-arg>
+    </bean>
+    <bean id="map" class="springAssign1.assign1.map">	
+        <constructor-arg ref="map1"/>
+    </bean>
+
+</beans>
